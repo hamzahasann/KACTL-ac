@@ -7,9 +7,10 @@
  * Time: O(\log N)
  * Status: Stress-tested
  */
+
 #pragma once
 
-int gcd(int u, int v) { // faster
+int gcd(int u, int v) {
     int shift;
     if (u == 0) return v;
     if (v == 0) return u;
@@ -25,3 +26,4 @@ int gcd(int u, int v) { // faster
     } while (v != 0);
     return u << shift;
 }
+
